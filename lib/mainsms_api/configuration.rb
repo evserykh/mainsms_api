@@ -7,8 +7,8 @@ module MainsmsApi
       @settings.api_key
     end
 
-    def self.read_settings
-      @settings ||= Hashie::Mash.new(YAML.load_file(Rails.root.join('config', 'mainsms.yml'))).mainsms
+    def self.setup(options)
+      @settings ||= Hashie::Mash.new(options)
     end
   end
 end

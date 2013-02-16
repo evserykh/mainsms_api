@@ -1,7 +1,3 @@
-require 'active_attr'
-require 'hashie'
-require 'httparty'
-
 module MainsmsApi
   class Message
     include ActiveAttr::MassAssignment
