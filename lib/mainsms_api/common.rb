@@ -7,6 +7,7 @@ module MainsmsApi
     private
 
     def api_key
+      MainsmsApi::Configuration.api_key
     end
 
     def used_params
