@@ -27,14 +27,22 @@ response = message.deliver
 * __sender__ - имя отправителя
 * __message__ - текст сообщения
 * __recipients__ - массив с номерами получателей
+* __run_at__ - время отправки
+* __test__ - тестовый режим ('1' для включения)
 
-Для объекта _response_ доступны методы, возвращаемые в ответе сервера. Например, обработать статус ответа можно так:
+Объект _response_ является экземпляром класса [Hashie::Mash](https://github.com/intridea/hashie#mash). Для него доступны методы, возвращаемые в ответе сервера. Например, обработать статус ответа можно так:
 ```ruby
 if response.status == 'success'
   #code
 end
 ```
-Подробнее от ответе сервера можно прочитать [тут](http://mainsms.ru/home/mainapi#send_api)
+или
+```ruby
+if response['status'] == 'success'
+  #code
+end
+```
+Подробнее об ответе сервера можно прочитать [тут](http://mainsms.ru/home/mainapi#send_api)
 
 ### Запрос статуса сообщения
 ```ruby
@@ -46,7 +54,7 @@ response = status.check
 
 Подробнее [тут](http://mainsms.ru/home/mainapi#status_api)
 
-### Определение цены рассылки
+### Определение цены
 ```ruby
 price = MainsmsApi::Price.new(:message => 'MESSAGE', :recipients => ['89112223344'])
 response = price.calculate
@@ -63,7 +71,7 @@ balance = MainsmsApi::Balance.new
 response = balance.check
 ```
 Подробнее [тут](http://mainsms.ru/home/mainapi#balance_api)
- 
+
 ### Запрос информации о номерах
 ```ruby
 info = MainsmsApi::Info.new(:phones => ['89112223344'])
