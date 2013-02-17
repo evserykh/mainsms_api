@@ -7,13 +7,13 @@ require "mainsms_api/version"
 Gem::Specification.new do |s|
   s.name        = "mainsms_api"
   s.version     = MainsmsApi::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MainsmsApi."
-  s.description = "TODO: Description of MainsmsApi."
+  s.authors     = ["Evgeniy Serykh"]
+  s.email       = ["e.v.serykh@gmail.com"]
+  s.homepage    = "https://github.com/evserykh/mainsms_api"
+  s.summary     = "mainsms.ru API"
+  s.description = "mainsms.ru API"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "active_attr", "~> 0.7.0"
   s.add_dependency "activesupport", "~> 3.1"
