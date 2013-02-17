@@ -6,6 +6,10 @@ module MainsmsApi
 
     private
 
+    def project
+      MainsmsApi::Configuration.project
+    end
+
     def api_key
       MainsmsApi::Configuration.api_key
     end

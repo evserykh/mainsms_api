@@ -7,6 +7,7 @@ require 'httparty'
 require 'mainsms_api/configuration'
 require 'mainsms_api/common'
 require 'mainsms_api/message'
+require 'mainsms_api/status'
  
 module MainsmsApi
 end

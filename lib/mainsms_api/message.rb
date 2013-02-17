@@ -3,13 +3,13 @@ module MainsmsApi
     include ActiveAttr::MassAssignment
     include Common
 
-    attr_accessor :project, :sender, :message, :recipients, :run_at, :test
+    attr_accessor :sender, :message, :recipients, :run_at, :test
 
     def initialize(args = {})
       super(args)
     end
 
-    alias_method :post, :response
+    alias_method :deliver, :response
 
     private
 

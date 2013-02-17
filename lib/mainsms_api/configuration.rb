@@ -7,6 +7,10 @@ module MainsmsApi
       @settings.api_key
     end
 
+    def self.project
+      @settings.project
+    end
+
     def self.setup(options)
       @settings ||= Hashie::Mash.new(options)
     end
