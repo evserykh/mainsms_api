@@ -9,6 +9,7 @@ require 'mainsms_api/common'
 require 'mainsms_api/message'
 require 'mainsms_api/status'
 require 'mainsms_api/price'
+require 'mainsms_api/balance'
  
 module MainsmsApi
 end
