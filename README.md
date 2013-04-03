@@ -2,7 +2,7 @@
 
 Добавить в Gemfile:
 ```ruby
-gem 'mainsms_api', :git => 'git://github.com/evserykh/mainsms_api.git'
+gem 'mainsms_api'
 ```
 
 ### Настройка
