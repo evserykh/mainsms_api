@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mainsms_api (0.0.2)
+    mainsms_api (0.0.3)
       active_attr (~> 0.7)
       activesupport (~> 4.0)
       hashie (~> 1.2)
