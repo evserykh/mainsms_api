@@ -3,7 +3,7 @@ PATH
   specs:
     mainsms_api (0.0.3)
       active_attr (~> 0.7)
-      activesupport (~> 4.0)
+      activesupport (>= 3, < 5)
       hashie (~> 2.0)
       httparty (~> 0.10)
 
