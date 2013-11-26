@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/evserykh/mainsms_api"
   s.summary     = "mainsms.ru API"
   s.description = "mainsms.ru API"
+  s.licenses    = ["MIT"]
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
