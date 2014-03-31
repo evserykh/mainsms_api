@@ -1,4 +1,4 @@
-## Использование
+## Использование [![Build Status](https://travis-ci.org/evserykh/mainsms_api.svg?branch=master)](https://travis-ci.org/evserykh/mainsms_api)
 
 Добавить в Gemfile:
 ```ruby
