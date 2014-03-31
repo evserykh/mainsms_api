@@ -34,6 +34,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     multi_xml (0.5.5)
+    rake (10.2.1)
     rspec (2.14.0)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -51,4 +52,5 @@ PLATFORMS
 
 DEPENDENCIES
   mainsms_api!
+  rake
   rspec

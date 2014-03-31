@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency "hashie", "~> 2.0"
   s.add_dependency "httparty", "~> 0.10"
 
+  s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
 end
