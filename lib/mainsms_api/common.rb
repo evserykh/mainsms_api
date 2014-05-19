@@ -1,3 +1,5 @@
+require 'signed_parameters'
+
 module MainsmsApi
   module Common
     def response
@@ -14,22 +16,8 @@ module MainsmsApi
       MainsmsApi::Configuration.api_key
     end
 
-    def used_params
-      params.select { |k, v| v.present? }
-    end
-
-    def sorted_params
-      used_params.values.map(&:to_s).sort
-    end
-
-    def sign
-      sha1 = Digest::SHA1.hexdigest((sorted_params + [api_key]).join(';'))
-
-      md5 = Digest::MD5.hexdigest(sha1)
-    end
-
     def query
-      used_params.merge(sign: sign).to_query
+      SignedParameters.to_query(params, api_key)
     end
 
     def protocol
