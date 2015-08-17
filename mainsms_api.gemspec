@@ -16,10 +16,10 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "active_attr", "~> 0.7"
-  s.add_dependency "activesupport", ">= 3", "< 5"
-  s.add_dependency "hashie", ">= 2"
-  s.add_dependency "httparty", "~> 0.10"
+  s.add_dependency "active_attr"
+  s.add_dependency "activesupport"
+  s.add_dependency "hashie"
+  s.add_dependency "httparty"
   s.add_dependency "signed_parameters"
 
   s.add_development_dependency "rake"
