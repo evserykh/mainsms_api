@@ -57,6 +57,16 @@ response = status.check
 
 Подробнее [тут](http://mainsms.ru/home/api/main#status)
 
+### Отмена запланированного сообщения
+```ruby
+messages = MainsmsApi::Cancel.new(:message_ids => ['1', '2'])
+response = messages.cancel
+```
+Параметры:
+* __message_ids__ - идентификаторы сообщений
+
+Подробнее [тут](http://mainsms.ru/home/api/main#cancel)
+
 ### Определение цены
 ```ruby
 price = MainsmsApi::Price.new(:message => 'MESSAGE', :recipients => ['89112223344'])
