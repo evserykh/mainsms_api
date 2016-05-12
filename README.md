@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/mainsms_api.svg)](http://badge.fury.io/rb/mainsms_api) [![Build Status](https://travis-ci.org/evserykh/mainsms_api.svg?branch=master)](https://travis-ci.org/evserykh/mainsms_api) [![Dependency Status](https://gemnasium.com/evserykh/mainsms_api.svg)](https://gemnasium.com/evserykh/mainsms_api)
+[![Gem Version](https://badge.fury.io/rb/mainsms_api.svg)](http://badge.fury.io/rb/mainsms) [![Build Status](https://travis-ci.org/evserykh/mainsms_api.svg?branch=master)](https://travis-ci.org/evserykh/mainsms) [![Dependency Status](https://gemnasium.com/evserykh/mainsms_api.svg)](https://gemnasium.com/evserykh/mainsms)
 ***
 
 ## Использование
@@ -45,7 +45,7 @@ if response['status'] == 'success'
   #code
 end
 ```
-Подробнее об ответе сервера можно прочитать [тут](http://mainsms.ru/home/main#send)
+Подробнее об ответе сервера можно прочитать [тут](http://mainsms.ru/home/api/main#send)
 
 ### Запрос статуса сообщения
 ```ruby
@@ -55,17 +55,7 @@ response = status.check
 Параметры:
 * __message_ids__ - идентификаторы сообщений
 
-Подробнее [тут](http://mainsms.ru/home/main#status)
-
-### Отмена запланированного сообщения
-```ruby
-messages = MainsmsApi::Cancel.new(:message_ids => ['1', '2'])
-response = messages.cancel
-```
-Параметры:
-* __message_ids__ - идентификаторы сообщений
-
-Подробнее [тут](http://mainsms.ru/home/main#cancel)
+Подробнее [тут](http://mainsms.ru/home/api/main#status)
 
 ### Определение цены
 ```ruby
@@ -76,14 +66,14 @@ response = price.calculate
 * __message__ - текст сообщения
 * __recipients__ - массив с номерами получателей
 
-Подробнее [тут](http://mainsms.ru/home/main#price)
+Подробнее [тут](http://mainsms.ru/home/api/main#price)
 
 ### Запрос баланса
 ```ruby
 balance = MainsmsApi::Balance.new
 response = balance.check
 ```
-Подробнее [тут](http://mainsms.ru/home/mainapi#balance_api)
+Подробнее [тут](http://mainsms.ru/home/api/main#balance)
 
 ### Запрос информации о номерах
 ```ruby
@@ -93,7 +83,7 @@ response = info.get
 Параметры:
 * __phones__ - массив номеров
 
-Подробнее [тут](http://mainsms.ru/home/main#info)
+Подробнее [тут](http://mainsms.ru/home/api/main#info)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/evserykh/mainsms_api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
