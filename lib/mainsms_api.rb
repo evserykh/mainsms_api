@@ -6,11 +6,13 @@ require 'httparty'
 
 require 'mainsms_api/configuration'
 require 'mainsms_api/common'
-require 'mainsms_api/message'
-require 'mainsms_api/status'
-require 'mainsms_api/price'
+
 require 'mainsms_api/balance'
+require 'mainsms_api/cancel'
 require 'mainsms_api/info'
- 
+require 'mainsms_api/message'
+require 'mainsms_api/price'
+require 'mainsms_api/status'
+
 module MainsmsApi
 end
