@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/mainsms_api.svg)](http://badge.fury.io/rb/mainsms) [![Build Status](https://travis-ci.org/evserykh/mainsms_api.svg?branch=master)](https://travis-ci.org/evserykh/mainsms) [![Dependency Status](https://gemnasium.com/evserykh/mainsms_api.svg)](https://gemnasium.com/evserykh/mainsms)
+[![Gem Version](https://badge.fury.io/rb/mainsms_api.svg)](http://badge.fury.io/rb/mainsms) [![Build Status](https://travis-ci.org/evserykh/mainsms_api.svg?branch=master)](https://travis-ci.org/evserykh/mainsms)
 ***
 
 ## Использование
