@@ -94,7 +94,3 @@ response = info.get
 * __phones__ - массив номеров
 
 Подробнее [тут](http://mainsms.ru/home/api/main#info)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/evserykh/mainsms_api/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
